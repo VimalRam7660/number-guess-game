@@ -1,17 +1,17 @@
 def game():
     while True:
         import random
-        target=random.randint(1,10)
+        target=random.randint(1,50)
         count=1
         print("\n\t\t----------START GAME----------")
         while count<=10:
             try:
-                guess=int(input("\n👉Guess the number between 1 to 10 : "))
+                guess=int(input("\n👉Guess the number between 1 to 50 : "))
                 if(guess==target):
                     print(f"\n||🎉 Congratulations! You guessed the number in {count} attempt(s). 🎉||")
                     break
-                elif guess <1 or guess >10:
-                    print("\n!!🙄 Number out of Range. Please guess between 1 to 10 🙄!!")
+                elif guess <1 or guess >50:
+                    print("\n!!🙄 Number out of Range. Please guess between 1 to 50 🙄!!")
                     continue
                 else:
                     print(f"\n!!😢 You guess wrong number.Please try again. (You have {10-count} attempt left) 😢!!")      
